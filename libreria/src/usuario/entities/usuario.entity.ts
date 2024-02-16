@@ -1,15 +1,14 @@
 import { Column, Entity } from "typeorm";
 
 @Entity()
-export class Autor {
+export class Usuario {
 
     @Column({ primary: true, generated: true})
-    idAutor: number;
+    idUsuario: number;
 
     @Column()
-    nombreAutor: string;
+    nombreUsuario: string;
 
     @Column()
-    correoAutor: string;
-
+    correoUsuario: string;
 }
